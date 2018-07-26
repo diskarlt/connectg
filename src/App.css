@@ -1,25 +1,75 @@
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  text-align: center;
+  height: 130px;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  padding-top: 20px;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-nav {  
+  position: fixed;
+  width: 300px;  
+  border-right: 1px solid #ddd;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 999;
+  display: block;
 }
 
-.App-title {
-  font-size: 1.5em;
+.App-body {
+  display: block;
+  padding-left: 300px;    
+  background: #f7f7f7;
+  height: auto;
 }
 
-.App-intro {
-  font-size: large;
+.no-scroll {
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.Nav-main a {
+  cursor: pointer;  
+}
+
+ul, li {
+  display: block;  
+  list-style: none;
+  padding: 0;  
+}
+
+.Nav-title {  
+  height: 48px;
+  line-height: 48px;
+  padding-left: 56px;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: -1px;
+  border-bottom: 1px solid #eee;  
+}
+
+.Nav-child {
+  border-bottom: 1px solid #eee;  
+}
+
+.Nav-child li {
+  height: 36px;
+  line-height: 36px;
+  padding-left: 56px;
+  background-color: #f4f4f4;
+  font-size: 14px;
 }
 
 @keyframes App-logo-spin {
