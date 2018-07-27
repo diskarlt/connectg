@@ -1,0 +1,15 @@
+.App {
+  text-align: center;  
+}
+
+.App-body {
+  display: block;
+  padding-left: 300px;    
+  background: #f7f7f7;
+  height: auto;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
