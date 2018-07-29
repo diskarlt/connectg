@@ -3,9 +3,7 @@ import React from 'react';
 const Home = () => {
     return (
         <div>
-            <h2>
-                홈
-            </h2>
+            <img src={require('./home_1.jpg')}/>
         </div>
     );
 };

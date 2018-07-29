@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import { Home, About, Manage, Contact, Partner } from 'pages';
+import { Route, Switch } from 'react-router-dom';
+import { Home, About, Management, Contact, Partnership } from 'pages';
 import Menu from 'components/Menu';
 
 import './App.css';
@@ -11,11 +11,21 @@ class App extends Component {
       <div>        
         <Menu/>
         <div className='App-body'>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" component={Home}/>            
+
             <Route exact path="/about" component={About}/>
-            <Route exact path="/manage" component={Manage}/>
-            <Route exact path="/contact" component={Contact}/>
-            <Route exact path="/partner" component={Partner}/>
+
+            <Switch>
+              <Route path="/management/:id" component={Management}/>
+              <Route path="/management" component={Management}/>
+            </Switch>
+
+            <Switch>
+              <Route path="/contact/:id" component={Contact}/>
+              <Route path="/contact" component={Contact}/>
+            </Switch>
+
+            <Route exact path="/partnership" component={Partnership}/>
         </div>        
       </div>
     );

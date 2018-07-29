@@ -14,45 +14,57 @@ const Menu = () => {
 				</div>
 				<ul className="Menu-main">
 					<li>
-						<NavLink to="/about" className="Menu-title Menu-link"> 회사소개 </NavLink>
+						<NavLink to="/about" className="Menu-title Menu-link"> 회사 소개 </NavLink>
 					</li>
 					<li>
-						<NavLink to="/manage" className="Menu-title Menu-link"> 매니지먼트 분야 소개 </NavLink>
+						<NavLink to="/management" className="Menu-title Menu-link"> 매니지먼트 분야 소개 </NavLink>
 						<ul className="Menu-child">
 							<li>
-							<a>계약 관리</a>
+								<NavLink to="/management/contract" className="Menu-subtitle Menu-link">계약 관리</NavLink>
 							</li>
 							<li>
-							<a>언어교육 관리</a>
+								<NavLink to="/management/language" className="Menu-subtitle Menu-link">언어교육 관리</NavLink>
 							</li>
 							<li>
-							<a>부상 관리</a>
+								<NavLink to="/management/injury" className="Menu-subtitle Menu-link">부상 관리</NavLink>
 							</li>
 							<li>
-							<a>홍보 관리</a>
+								<NavLink to="/management/promote" className="Menu-subtitle Menu-link">홍보 관리</NavLink>
 							</li>
 							<li>
-							<a>피드백 관리</a>
+								<NavLink to="/management/feedback" className="Menu-subtitle Menu-link">피드백 관리</NavLink>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<NavLink to="/contact" className="Menu-title Menu-link"> 상담문의 </NavLink>
+						<NavLink to="/contact" className="Menu-title Menu-link"> 상담 문의 </NavLink>
 						<ul className="Menu-child">
 							<li>
-							<a>방문상담</a>
+								<NavLink to="/contact/visit" className="Menu-subtitle Menu-link">방문 상담</NavLink>
 							</li>
 							<li>
-							<a>전화상담</a>
+								<NavLink to="/contact/call" className="Menu-subtitle Menu-link">전화 상담</NavLink>
 							</li>
 							<li>
-							<a>온라인 디스코드 채널 상담</a>
+								<NavLink to="/contact/discord" className="Menu-subtitle Menu-link">온라인 디스코드 채널 상담</NavLink>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<NavLink to="/partner" className="Menu-title Menu-link"> 파트너쉽 </NavLink>
-					</li>            
+						<NavLink to="/partnership" className="Menu-title Menu-link"> 파트너쉽 </NavLink>
+					</li>
+					<li>
+						<div className="Menu-footer">
+							<div>
+								<img className="Menu-footer-img" src={require('./call.png')}/>
+								<span>02)0000-0000</span>
+							</div>
+							<div>								
+								<img className="Menu-footer-img" src={require('./Discord-Logo-Color.png')}/>
+								<span>https://discord.gg/XXXXXX</span>
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
         </div>

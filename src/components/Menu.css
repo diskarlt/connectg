@@ -7,6 +7,7 @@
 	height: 100%;
 	z-index: 999;
 	display: block;
+	background: #f7f7f7;
 }
 
 .no-scroll {
@@ -18,8 +19,8 @@
 }
 
 .Menu-logo-base {	
-	border-bottom: 1px solid #eee;	
-	background-color: white;	
+	border-bottom: 1px solid #eee;
+	background: white;
 }
 
 .Menu-logo {
@@ -51,13 +52,14 @@ ul, li {
 .Menu-title {  
 	height: 48px;
 	line-height: 48px;
-	padding-left: 56px;
+	padding-left: 52px;
 	display: block;
 	font-size: 15px;
 	font-weight: bold;
 	color: #333;
 	letter-spacing: -1px;
 	border-bottom: 1px solid #eee;	
+	background-color: white;
 }
 
 .Menu-link:hover {
@@ -66,14 +68,35 @@ ul, li {
 }
 
 .Menu-child {
-border-bottom: 1px solid #eee;  
+	border-bottom: 1px solid #eee;  
 }
 
-.Menu-child li {
-height: 36px;
-line-height: 36px;
-padding-left: 56px;
-background-color: #f4f4f4;
-font-size: 14px;
+.Menu-subtitle {
+	height: 36px;
+	line-height: 36px;
+	padding-left: 64px;	
+	display: block;
+	font-size: 14px;	
+	color: #333;
+	letter-spacing: -1px;
+	font-size: 14px;
+}
+
+.Menu-footer {	
+	margin-top: 10px;
+	line-height: 30px;
+	color: #333;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.Menu-footer-img {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
 }
   
