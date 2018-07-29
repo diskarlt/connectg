@@ -7,11 +7,11 @@ import './App.css';
 
 class App extends Component {
   render() {
-    return (      
-      <div>        
+    return (            
+      <div>
         <Menu/>
         <div className='App-body'>
-            <Route exact path="/" component={Home}/>            
+            <Route exact path="/" component={Home}/>
 
             <Route exact path="/about" component={About}/>
 
@@ -26,8 +26,8 @@ class App extends Component {
             </Switch>
 
             <Route exact path="/partnership" component={Partnership}/>
-        </div>        
-      </div>
+        </div>
+      </div>   
     );
   }
 }
