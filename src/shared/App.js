@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Home, About, Management, Contact, Partnership } from 'pages';
-import Menu from 'components/Menu';
+import AppNav from 'components/AppNav';
 
 import './App.css';
 
@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (            
       <div>
-        <Menu/>
+        <AppNav/>
         <div className='App-body'>
             <Route exact path="/" component={Home}/>
 

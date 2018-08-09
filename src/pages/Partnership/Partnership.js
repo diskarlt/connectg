@@ -3,7 +3,7 @@ import React from 'react';
 const Partnership = () => {
     return (
         <div>
-            <img src={require('./partner_1.jpg')}/>
+            <img className="img-fluid" src={require('./partner_1.jpg')}/>
         </div>
     );
 };
