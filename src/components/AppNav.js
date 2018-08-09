@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink as RRNavLink } from 'react-router-dom';
 import {
 	Button,
 	Collapse,
@@ -57,7 +58,7 @@ class AppNav extends React.Component {
 			<div className="bg-dark">
 				<div className="App-Nav">
 					<Navbar color="dark" dark expand="md">
-						<NavbarBrand href="/">ConnectG</NavbarBrand>
+						<NavbarBrand to="/" tag={RRNavLink}>ConnectG</NavbarBrand>
 						<NavbarToggler onClick={this.toggleMenu} />
 						<Collapse isOpen={this.state.isOpen} navbar>
 							<Nav className="ml-auto" navbar>								
@@ -67,19 +68,19 @@ class AppNav extends React.Component {
 									</DropdownToggle>
 									<DropdownMenu left className="bg-dark">
 										<DropdownItem className="bg-dark" color="dark" dark>
-											<NavLink href="/management/contract">프로게이머</NavLink>
+											<NavLink to="/management/contract" tag={RRNavLink}>프로게이머</NavLink>
 										</DropdownItem>
 										<DropdownItem className="bg-dark" color="dark" dark>
-											<NavLink href="/management/language">커뮤니케이션</NavLink>
+											<NavLink to="/management/language" tag={RRNavLink}>커뮤니케이션</NavLink>
 										</DropdownItem>
 										<DropdownItem className="bg-dark" color="dark" dark>
-											<NavLink href="/management/contract">크리에이터</NavLink>
+											<NavLink to="/management/contract" tag={RRNavLink}>크리에이터</NavLink>
 										</DropdownItem>
 										<DropdownItem className="bg-dark" color="dark" dark>
-											<NavLink href="/management/contract">게임해설</NavLink>
+											<NavLink to="/management/contract" tag={RRNavLink}>게임해설</NavLink>
 										</DropdownItem>
 										<DropdownItem className="bg-dark" color="dark" dark>
-											<NavLink href="/management/contract">게임교육</NavLink>
+											<NavLink to="/management/contract" tag={RRNavLink}>게임교육</NavLink>
 										</DropdownItem>
 									</DropdownMenu>
 								</UncontrolledDropdown>
@@ -150,8 +151,8 @@ class AppNav extends React.Component {
 										</DropdownItem>
 									</DropdownMenu>
 								</UncontrolledDropdown>
-								<NavItem>
-									<NavLink href="/partnership/">제휴</NavLink>
+								<NavItem>									
+									<NavLink to="/partnership/" tag={RRNavLink}>제휴</NavLink>
 								</NavItem>
 							</Nav>
 						</Collapse>
